@@ -1,0 +1,212 @@
+/* style.css Fall 2021 */
+
+/* 
+This is just sample CSS provided for you. You will need to modify it.
+*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1024px;
+    padding: 0;
+    margin: 20px auto;
+    color: #000000;
+    background: #fdce23;
+}
+.top_header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 10px 0;
+}
+.logo{
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+.logo img{
+    width: 100px;
+}
+header nav{
+    text-align: right;
+    padding: 10px;
+    background-color: #000000;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+main {
+    padding: 20px;
+}
+.main_item{
+    display: flex;
+    padding-bottom: 50px;
+}
+.main_item img{
+    width: 400px;
+}
+.main_item_1{
+    padding-left: 50px;
+}
+.main_item_2{
+    padding-right: 50px;
+}
+
+
+.product_items{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.product_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product_item img{
+    width: 450px;
+}
+.product_item div{
+    /* padding-top: 50px; */
+    width: 400px;
+}
+
+.main_about{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_about img{
+    width: 500px;
+    padding-right: 50px;
+}
+
+.gift{
+    display: flex;
+    justify-content: space-between;
+}
+.gift img{
+    width: 400px;
+}
+.gift_items{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.gift_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.gift_item img{
+    width: 350px;
+}
+.gift_item div{
+    max-width: 350px;
+}
+.gift_item button{
+    padding: 10px 30px;
+    background: #000000;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+footer nav{
+    padding: 10px 0;
+    background: #000000;
+}
+footer div{
+    padding: 10px 0;
+    background: #000000;
+}
+footer nav a{
+    padding: 0 5px;
+    color: white;
+    text-decoration: none;
+}
+footer nav a:hover{
+    text-decoration: underline;
+}
+
+/* Feel free to modify the breakpoints provided or add your own additional ones */
+
+@media (max-width: 1024px) {
+    /* your changes to CSS go here */
+    body{
+        width: 100%;
+    }
+    .product_item img, .product_item div{
+        width: 350px;
+    }
+}
+@media (max-width: 768px) {
+    /* your changes to CSS go here */
+    .main_item{
+        flex-direction: column;
+    }
+    .reverse{
+        flex-direction: column-reverse!important;
+    }
+    .main_item img{
+        width: 100%;
+    }
+    .main_item p{
+        padding: 0;
+    }
+    .product_items{
+        flex-direction: column;
+    }
+    .product_item div{
+        padding-bottom: 30px;
+    }
+    .main_about{
+        flex-direction: column;
+    }
+    .main_about img{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .gift{
+        flex-direction: column;
+        align-items: center;
+    }
+    .gift_items{
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+    /* your changes to CSS go here */
+    header{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .top_header{
+        font-size: 14px;
+        align-items: center;
+    }
+    .logo{
+        font-size: 18px;
+    }
+    header nav a{
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    footer{
+    }
+    .product_item img, .product_item div{
+        width: 100%;
+    }
+    .gift img{
+        width: 100%;
+    }
+    .gift_item img{
+        width: 100%;
+    }
+}
